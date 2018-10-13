@@ -1,0 +1,339 @@
+extends _layout/layout
+
+block variables
+  - var title = 'K-Responsive-Menu'
+  - var bodyclass = 'index'
+
+block css
+  link(rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css")
+  link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+  link(rel="stylesheet" type="text/css" href="./css/k-responsive-menu.css")
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js')
+
+
+block header
+
+
+block body 
+  .container
+    h1.display-4(style="margin:2rem 0;") K-Responsive-Menu
+    p Working on Bootstrap 4
+    p 
+      code k-responsive-menu 
+      | is a lightweight jQuery plugin to create responsive multi - level navigation menus with multi device support, By Bao Nguyen 
+      a(href="http://baonguyenyam.github.io/") http://baonguyenyam.github.io/.
+    p 
+      code k-responsive-menu 
+      | comes with 2 variants like horizontal, vertical menu. It gives complete responsive menu solution for any kind of websites or admin templates. The plugin has clean and well commented valid code, easy to Integrate and modify.
+
+    hr
+
+
+    .row.mt-5
+      .col-sm-3 
+        .list-group.p-0(style='position: -webkit-sticky; position: sticky; top: 1rem; ')
+          .list-group-item.active Menu
+          a.list-group-item.list-group-item-action(href='#sec0') Features 
+          a.list-group-item.list-group-item-action(href='#sec1') Gettings started 
+          a.list-group-item.list-group-item-action(href='#sec2') Demo 
+          a.list-group-item.list-group-item-action(href='#sec3') APIs & Events
+          a.list-group-item.list-group-item-action(href='https://github.com/baonguyenyam/k-responsive-menu') Github 
+        
+      .col-sm-9 
+
+        h2#sec0 Features
+        hr 
+        ul 
+          li Fully Responsive multi-level Menu
+          li Menu Styles: Horizontal, Vertical menu
+          li Icon Support [Integrated with FontAwesome]
+          li Click / Hover Events
+          li Lightweight jQuery script
+          li Events
+          li Valid HTML5 and CSS3
+          li Bootstrap Compatible
+          li Easy to Integrate & customize
+          li Cross-browser support
+          li Clean and well commented code
+          li Help documentation
+        hr 
+        h5.h5 Compatible Browsers
+        p This menu has been tested and works with all the following browsers:
+
+        ul 
+          li Internet Explorer 7+
+          li Firefox 3+
+          li Chrome 4+
+          li Safari 4+
+          li Opera 10+
+
+        h2#sec1.mt-5 Gettings started 
+        p.lead.text-danger This Plugins required Bootstrap Framework
+        hr 
+        h5.h5 Install via Bower
+        .border.p-3.bg-light.mb-5 
+          code bower i k-responsive-menu -S
+        h5.h5 CSS
+        p Copy-paste the stylesheet 
+          code &lt;link&gt; 
+          | into your 
+          code &lt;head&gt; 
+          | before all other stylesheets to load our CSS.
+        pre.p-3.prettyprint.lang-html.
+          &lt;link rel=&quot;stylesheet&quot; href=&quot;./bower_components/dist/css/k-responsive-menu.css&quot;&gt;
+        h5.h5 JS
+        p Place the following 
+          code &lt;script&gt; 
+          | near the end of your pages, right before the closing 
+          code &lt;/body&gt; 
+          | tag, to enable them. jQuery must come first, then k-responsive-menu.js, and then our JavaScript plugins.
+        pre.p-3.prettyprint.lang-html.
+          &lt;script src=&quot;./bower_components/dist/js/k-responsive-menu.js&quot;&gt;
+
+        h2.mt-5#sec2 Demo Horizontal
+        hr 
+
+        dl.row
+          dt.col-sm-3 
+            a.btn.btn-primary(href="./header-basic.html") Basic
+          dd.col-sm-9 Toggle menu basic
+        dl.row
+          dt.col-sm-3 
+            a.btn.btn-primary(href="./header-basic-form.html") Basic with form
+          dd.col-sm-9 Toggle menu with form inline
+        dl.row
+          dt.col-sm-3 
+            a.btn.btn-primary(href="./header-fluid.html") Fluid
+          dd.col-sm-9 Toggle menu with container fluid
+        dl.row
+          dt.col-sm-3 
+            a.btn.btn-primary(href="./header-push-left.html") Push Left
+          dd.col-sm-9 Push left menu
+        dl.row
+          dt.col-sm-3 
+            a.btn.btn-primary(href="./header-push-right.html") Push Right
+          dd.col-sm-9 Push right menu
+        dl.row
+          dt.col-sm-3 
+            a.btn.btn-primary(href="./header-push-content-left.html") Push Left + Pull Main
+          dd.col-sm-9 Push left menu and pull main tag
+        dl.row
+          dt.col-sm-3 
+            a.btn.btn-primary(href="./header-push-content-right.html") Push Right + Pull Main
+          dd.col-sm-9 Push right menu and pull main tag
+        dl.row
+          dt.col-sm-3 
+            a.btn.btn-primary(href="./header-map-to.html") Map to
+          dd.col-sm-9 Menu Map
+        dl.row
+          dt.col-sm-3 
+            a.btn.btn-primary(href="./header-backdrop.html") BackDrop
+          dd.col-sm-9 Menu BackDrop
+        dl.row
+          dt.col-sm-3 
+            a.btn.btn-primary(href="./header-attr.html") Using Attribute
+          dd.col-sm-9 Without JS Options only using Attribute
+
+        h2.mt-5#sec2 Demo Vertical
+        hr 
+
+        dl.row
+          dt.col-sm-3 
+            a.btn.btn-primary(href="./header-basic-vertical.html") Basic
+          dd.col-sm-9 Toggle menu basic
+        dl.row
+          dt.col-sm-3 
+            a.btn.btn-primary(href="./header-basic-form-vertical.html") Basic with form
+          dd.col-sm-9 Toggle menu with form inline
+        dl.row
+          dt.col-sm-3 
+            a.btn.btn-primary(href="./header-push-right-vertical.html") Push right
+          dd.col-sm-9 Toggle menu with form inline
+
+       
+
+        h2.mt-5#sec3 APIs 
+        hr 
+        h5.h5.mt-4 JS Default value
+        pre.p-3.prettyprint.lang-js.
+          $(document).ready(function() {
+            $('#demoResAllInOneMenu').kResponsiveMenu({
+              animationSpeed: 'slow', 
+              resizeWidth: 768, 
+              menuType: 'toggle',
+              menuFloat: false,
+              menuPush: null,
+              menuPushPosition: 'absolute', 
+              menuPushWidth: '100%',
+              menuBackDrop: false, 
+              menuIcon: null, 
+              onComplete: null,
+              onResize: null,
+              onResizeEnd: null,
+              onClick: null,
+              onHover: null,
+              unHover: null,
+              onBegin: null,
+              onChange: null
+            });
+          });
+        h5.h5.mt-4 Value
+        table.table.table-bordered
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') Value
+              th(scope='col') Default
+              th(scope='col') Setting
+          tbody
+            tr
+              th(scope='row') 1
+              td
+                strong animationSpeed
+              td
+                code 'slow'
+              td 'slow', 'fast', 200...
+            tr
+              th(scope='row') 2
+              td
+                strong resizeWidth
+              td
+                code 768
+              td 'xs', 'sm', 'md', 'lg', 'xl', 480...
+            tr
+              th(scope='row') 3
+              td
+                strong menuType
+              td
+                code 'toggle'
+              td 'horizontal', 'vertical', 'toggle'
+            tr
+              th(scope='row') 4
+              td
+                strong menuFloat
+              td
+                code false
+              td true/false
+            tr
+              th(scope='row') 5
+              td
+                strong menuPush
+              td
+                code null
+              td 'right', 'left'
+            tr
+              th(scope='row') 6
+              td
+                strong menuPushPosition
+              td
+                code 'absolute'
+              td 'fixed'
+            tr
+              th(scope='row') 7
+              td
+                strong menuPushWidth
+              td
+                code '100%'
+              td 'px', '%', 'rem'
+            tr
+              th(scope='row') 8
+              td
+                strong menuBackDrop
+              td
+                code false
+              td true/false
+            tr
+              th(scope='row') 9
+              td
+                strong menuIcon
+              td
+                code null
+              td '&lt;i class='fa fa-bars'&gt;&lt;/i&gt;'
+        h5.h5.mt-4 Events
+        table.table.table-bordered
+          thead
+            tr
+              th(scope='col') #
+              th(scope='col') Value
+              th(scope='col') Default
+              th(scope='col') Setting
+          tbody
+            tr
+              th(scope='row') 1
+              td
+                | onComplete 
+                br
+                | onResize 
+                br
+                | onResizeEnd 
+                br
+                | onClick 
+                br
+                | onHover 
+                br
+                | unHover 
+                br
+                | onBegin 
+                br
+                | onChange
+              td null
+              td onResize: function () {}
+                p 
+                  a(href="./header-event.html", title="title") View details 
+        h5.h5.mt-4 Default Attribute
+        .border.p-3.bg-light.mb-5
+          dl.row
+            dt.col-sm-3 
+              code [k-toggle-for]
+            dd.col-sm-9 Toggle menu have [k-toggle-for] value
+          dl.row.mb-0
+            dt.col-sm-3 
+              code [k-menu-map-to]
+            dd.col-sm-9 On the mobile where contents have attribute [k-menu-map-to] will be auto clone to target element value
+        h5.h5.mt-4 Using Attribute only
+        .border.p-3.bg-light.mb-5
+          dl.row
+            dt.col-sm-3 
+              code [k-responsive-menu]
+            dd.col-sm-9 true
+          dl.row
+            dt.col-sm-3 
+              code [k-menu-resize]
+            dd.col-sm-9 700 OR 'xs', 'sm', 'md', 'lg', 'xl'
+          dl.row
+            dt.col-sm-3 
+              code [k-menu-icon]
+            dd.col-sm-9 &lt;i class='fa fa-bars'&gt;&lt;/i&gt;
+          dl.row
+            dt.col-sm-3 
+              code [k-menu-speed]
+            dd.col-sm-9 'slow' OR 'fast', 500
+          dl.row
+            dt.col-sm-3 
+              code [k-menu-width]
+            dd.col-sm-9 '250px' OR '100%', '40rem'
+          dl.row
+            dt.col-sm-3 
+              code [k-menu-push]
+            dd.col-sm-9 'left' OR 'right'
+          dl.row.mb-0
+            dt.col-sm-3 
+              code [k-menu-position]
+            dd.col-sm-9 'fixed' OR 'absolute'
+
+
+    h2.h2.mb-3 Licence
+    h5.h5 Copyright © 2018 Bao Nguyen
+
+    p Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+    p The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+    p THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+    h6.h6.mb-5 Bảo Nguyên
+      
+
+ 
+  script(src='https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js')

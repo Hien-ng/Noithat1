@@ -1,0 +1,26 @@
+{
+		"name": "k-sass-core",
+		"version": "6.0.3",
+		"description": "k-sass-core: An SASS Lib, thư viện sass cho frontend developer",
+    "main": "",
+    "authors": [
+        "BaoNguyen <baonguyenyam@gmail.com> (http://baonguyenyam.github.io/)"
+    ],
+    "license": "MIT",
+    "keywords": [
+			"k-sass-core",
+			"sass core",
+			"sass mixin",
+			"sass function",
+			"sass variables"
+		],
+    "homepage": "https://github.com/baonguyenyam/k-sass-core",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+
+    ]
+}
