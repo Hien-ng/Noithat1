@@ -1,0 +1,42 @@
+{
+  "name": "auto-build-static-web",
+  "description": "",
+  "main": "",
+  "authors": [
+    "baonguyen"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/baonguyenyam/canhcam-cab",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "3.7.0",
+    "owl.carousel": "2.3.4",
+    "k-sass-core": "6.0.4",
+    "k-gmaps": "1.0.6",
+    "Modernizr": "http://modernizr.com/download/?-fontface-backgroundsize-borderimage-borderradius-boxshadow-flexbox-hsla-multiplebgs-opacity-rgba-textshadow-cssanimations-csscolumns-generatedcontent-cssgradients-cssreflections-csstransforms-csstransforms3d-csstransitions-applicationcache-canvas-canvastext-draganddrop-hashchange-history-audio-video-indexeddb-input-inputtypes-localstorage-postmessage-sessionstorage-websockets-websqldatabase-webworkers-geolocation-inlinesvg-smil-svg-svgclippaths-touch-webgl-shiv-mq-cssclasses-addtest-prefixed-teststyles-testprop-testallprops-hasevent-prefixes-domprefixes-load.zip",
+    "offline": "0.7.19",
+    "moment": "2.22.2",
+    "lodash": "4.17.10",
+    "bootstrap-validator": "0.11.9",
+    "select2": "4.0.5",
+    "lightgallery": "1.6.11",
+    "freewall": "1.0.6",
+    "seiyria-bootstrap-slider": "10.2.0",
+    "slick-carousel": "1.8.1",
+    "mdi": "2.6.95",
+    "bootstrap-touchspin": "4.2.5",
+    "bootstrap-datepicker": "1.8.0",
+    "elevatezoom": "2.2.3",
+    "k-responsive-menu": "4.0.1",
+    "linearicons": "1.0.1",
+    "fancybox": "3.3.5",
+    "jquery.scrollbar": "0.2.11",
+    "swiper": "4.3.5"
+  }
+}
