@@ -1,0 +1,108 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-boxes-7
+	position: relative
+	+pad(2rem 0)
+	height: auto
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+		height: 300px
+	background: #1c1b19
+	.up
+		figure
+			position: relative
+			.box-img 
+				img
+					width: 100%
+			figcaption
+				p 
+					+fz(r(8px))
+					+fw(600)
+					color: #fad265
+				.text
+					margin-top: 1.5rem
+					h3
+						+fz(r(11px))
+						color: #ffffff
+						+fw(700)
+						text-transform: uppercase
+					.buttom 
+						a 
+							color: #000000
+							i 
+								border-radius: 50%
+								background: #fad265
+								padding: 10px 12px 10px 14px
+			+media-breakpoint-up(lg)
+				.box-img
+					img 
+						max-width: 100%
+						height: 324px
+				figcaption
+					+pos(abs, null null 5% 5%)
+					.text
+						display: flex
+						justify-content: space-between
+						.buttom
+							display: flex
+							justify-content: flex-end
+							margin-right: 1rem
+			+media-breakpoint-up(xl)
+				.box-img
+					img 
+						max-width: 100%
+						height: 390px
+		.title 
+			height: 324px
+			background: #353430
+			+pad(42px null null 36px)
+			i 
+				+fz(r(36px))
+				color: #fad265
+				margin-bottom: 2.57rem
+			h3 
+				+fz(r(9px))
+				+fw(700px)
+				color: #ffffff
+			p 
+				+fz(r(7px))
+				+fw(400)
+				+mar(1.64rem null 4.57rem null)
+				max-width: 88%
+				color: #abaaa8
+			.buttom 
+				a
+					i 
+						color: #000000
+						+fz(1rem)
+						border-radius: 50%
+						background: #fad265
+						padding: 10px 12px 10px 14px
+			&.last
+				background: #4f4c47
+			&.last1
+				background: #69655c
+		+media-breakpoint-up(xl)
+			.title 
+				height: 390px
+				i 
+					+fz(r(46px))
+					margin-bottom: 4.4rem
+				h3 
+					+fz(r(15px))
+				p 
+					+fz(r(10px))
+					margin-top: 1rem
+					margin-bottom: 5.4rem
+	+media-breakpoint-up(lg)
+		display: flex
+		justify-content: center
+		.up
+			position: absolute
+			width: 100%
+			height: 100%
+			top: -7rem
+			

@@ -5,25 +5,73 @@
 
 .canhcam-boxes-8
 	+pad(2rem 0)
+	height: auto
+	+media-breakpoint-up(md)
+		height: 739px
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
-	.box-info
-		background: darken(color-get($mau,trang) ,5%)
-		+bor-rad(5px)
-		overflow: hidden
-		img 
-			max-width: 100%
-		.text
-			position: relative
-			+mar(2rem)
-			+pad(2rem)
-			max-height: 500px
-			display: flex
-			flex-direction: column
-			background: darken(color-get($mau,trang) ,3%)
-			overflow: scroll
-		+media-breakpoint-up(md)
-			img 
-				+opacity(0)
-				display: none
-	
+		height: 473px
+	background: #1c1b19
+	.title
+		span 
+			color: #fad165
+			+fz(r(8px))
+			+fw(600)
+		h2 
+			color: #ffffff
+			+fz(r(21px))
+			+fw(700)
+			span 
+				+fz(r(21px))
+				+fw(700)
+		h3 
+			color: #cfcfcf
+			+fz(r(11px))
+			+fw(400s)
+		p 
+			color: #9f9f9d
+			+fz(r(11px))
+			+fw(400s)
+		.button 
+			a 
+				background: #fad365
+				border-radius: 50px
+				+fz(r(6px))
+				+pad(0.79rem 1.64rem)
+				color: #000000 
+				+fw(600)
+	.item
+		figure
+			.box
+				position: relative
+				.box-img
+					img 
+						max-width: 100%
+				.box-img1
+					img 
+						max-width: 100%
+			+media-breakpoint-up(md)
+				.box
+					.box-img
+						display: flex
+						justify-content: flex-end
+						img
+							max-height: 363px
+							max-width: 377px
+					.box-img1
+						position: absolute
+						width: 100%
+						height: 100%
+						top: 100px
+						left: 124px
+						img
+							max-height: 363px
+							max-width: 475px
+			+media-breakpoint-up(lg)
+				.box
+					.box-img1
+						left: 55px
+			+media-breakpoint-up(xl)
+				.box
+					.box-img1
+						left: 147px
