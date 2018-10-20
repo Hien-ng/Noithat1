@@ -1,27 +1,28 @@
-header.canhcam-header-2
-	.hidden
-		nav.navbar.navbar-expand-lg.container
-			a.navbar-brand(href='#')
-				img(src="./img/logo2.png", alt="Logo")
-			#phone
-			button.navbar-toggler.ml-3(type='button', data-toggle='collapse', data-target='#CCMenuHeader', aria-controls='CCMenuHeader', aria-expanded='false', aria-label='Toggle navigation')
-				span.fa.fa-bars
-			#CCMenuHeader.collapse.navbar-collapse
-				.item
-					ul.navbar-nav.mt-2.mt-lg-0.menu
-						li.nav-item.actives
-							a.nav-link(href='#') Dự án
-						li.nav-item
-							a.nav-link(href='#') Mua
-						li.nav-item
-							a.nav-link(href='#') Thuê
-						li.nav-item
-							a.nav-link(href='#') Tin tức
-				.title.ml-auto
-					.phone(k-menu-map-to='#phone')
-						a.btn.btn-link.btn-phone(href="#")
-							em.mdi.mdi-phone
-						span.ml-3.d-none.d-lg-inline-block 0919 686 737
+header.bg-light
+	.k-menu-bar.container
+		#logo.mr-auto
+		#language
+		button.k-button-toggle.navbar-toggler(k-toggle-for='#demoResAllInOneMenu') MENU
+	#demoResAllInOneMenu.container.k-responsive-menu
+		.k-menu-bar
+			.k-logo.navbar-brand.mr-auto
+				img.iconmenu(src="../img/logo.png", alt="")
+			button.k-button-toggle.navbar-toggler(k-toggle-for='#demoResAllInOneMenu') MENU
+		.k-logo.navbar-brand.mr-auto(k-menu-map-to='#logo')
+			a(href="#")
+				img.img-fluid(src="../img/logo1.png", alt="") 
+		ul.nav.nav-of
+			li.nav-item
+				a.nav-links(href='#') OUR PROPERTIES
+			li.nav-item
+				a.nav-links(href='#') LE COLLECCIONIST EXPERIENCE
+			li.nav-item
+				a.nav-links(href='#h') THE NOTEBOOK
+		ul.nav.language(k-menu-map-to='#language')
+			li.nav-item
+				a.nav-link(href='#') SIGN UP
+			li.nav-item
+				a.nav-link(href='#') LOGIN
 //- header.canhcam-header-2
 //- 	.hidden
 //- 	.container

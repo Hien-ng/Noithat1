@@ -3,20 +3,80 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-header-2
-	
+.bg-light
 	position: fixed
 	z-index: 999
+	background: rgba(248, 249, 250, 0) !important
 	width: 100%
-	transition: .4s all ease-in-out
 	&.active
-		background: color-rgba(color-get($mau,nau),.9)
-		
-		+media-breakpoint-up(md)
-			.k-responsive-menu
-				padding: 0!important
-	.navbar-brand
-		img
-			max-height: 2rem
-.hidden
-		padding: 0
+		background: rgba(33, 37, 41, 0.48) !important
+		.img-fluid
+			width: 120px
+			transition: all ease-in-out .3s
+	.img-fluid
+		width: 100px
+		transition: all ease-in-out .3s
+	.iconmenu
+		width: 80px
+	.k-responsive-menu
+		background: #fff
+		.k-button-toggle
+			.fa
+				color: #000 !important
+	.nav-link
+		padding: .5rem .3rem
+		color: #fff
+		font-size: .8rem
+		&:hover
+			text-decoration: none
+	.nav-links
+		padding: .5rem 1rem
+		color: #000
+		&:hover
+			text-decoration: none
+	.nav
+		text-align: center
+	.k-button-toggle
+		.fa
+			color: #fff !important
++media-breakpoint-up(sm)
+	.bg-light
+		.img-fluid
+			width: 150px
+		.k-responsive-menu
+			width: 40% !important
+			height: 100% !important
+		.iconmenu
+			width: 130px
+		&.active
+			.img-fluid
++media-breakpoint-up(lg)
+	.bg-light
+		.k-responsive-menu
+			width: 100% !important
+			height: 100% !important
+			background: rgba(255, 255, 255, 0)
+		.img-fluid
+			width: 180px
+		.nav-of
+			width: 70%
+			.nav-links
+				color: #fff
+				&:hover
+					background: rgba(244, 237, 238,0.23137254901960785)
+					transition: all ease-in-out 1s
+					border-radius: 5px
+		.nav-link
+			&:hover
+				background: rgba(244, 237, 238,0.23137254901960785)
+				transition: all ease-in-out 1s
+				border-radius: 5px
+		&.active
+			.img-fluid
+				width: 150px
+			.nav-links
+				&:hover
+					background: rgba(7, 7, 7, 0.38)
+			.nav-link
+				&:hover
+					background: rgba(7, 7, 7, 0.38)
