@@ -4,135 +4,186 @@
 //////////////////////////////////////
 
 .canhcam-testimonials-1
+	position: relative
 	+pad(2rem 0)
+	background: #1c1b19
+	height: auto
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
-	.title
-		text-decoration: none
-		figure
-			.boximg
-				+bor-rad(5px)
-				overflow: hidden
-				img
-					+opacity(0)
-			figcaption
-				+pad(1rem 0)
-				h3 
-					+fw(bold)
-					+fz(1.3rem)
-				p 
-					color: lighten(color-get($mau,den),30%)
-					margin-bottom: 0
-		&:hover
-			figure
-				figcaption
-					p 
-						color: lighten(color-get($mau,den),60%)
-		+media-breakpoint-up(lg)
+		height: 830px
+	+media-breakpoint-up(xl)
+		height: 950px
+	.up
+		.table
 			figure
 				position: relative
-				+bor-rad(5px)
-				overflow: hidden
+				.box-img 
+					img
+						width: 100%
 				figcaption
-					text-align: center
-					+pos(abs, null null 0 0)
-					+pad(1rem)
-					width: 100%
-					background: lighten(color-get($mau,den),90%)
-					display: flex
-					align-items: center
-					flex-direction: column
-					justify-content: center
-					h3 
-						margin-bottom: 0
 					p 
-						padding-top: .5rem
-
-	.testimonial-slider
-		.item
-			text-align: center
-			margin-bottom: 4rem
-			width: 100%
-			img
-				max-width: 90px
-				+bor-rad(50%)
-				display: inline-block
-				border: 1px solid darken(color-get($mau,trang),5%)
-			figcaption
-				margin: 0 auto
+						+fz(r(12px))
+						+fw(600)
+						color: #fad265
+					.text
+						margin-top: 1.5rem
+						h3
+							+fz(r(11px))
+							color: #ffffff
+							+fw(700)
+							text-transform: uppercase
+						.buttom 
+							a 
+								color: #000000
+								i 
+									border-radius: 50%
+									background: #fad265
+									padding: 10px 12px 10px 14px
 				+media-breakpoint-up(lg)
-					max-width: 600px
-				blockquote
-					font-style: italic
-					margin-top: 1rem
-					position: relative
-					line-height: 1.5rem
-					display: inline-flex
-					+pad(0 3rem)
-					&:after, &:before
-						content: ''
-						display: inline-block
-						font-family: 'Font Awesome 5 Free'
-						font-weight: 900
-						+fz(3rem)
-						height: 2rem
-						width: 2rem
-						color: darken(color-get($mau,trang),35%)
-					&:before
-						content: "\201C"
-						+pos(abs, 0 null null 1rem)
-					&:after
-						content: "\201D"
-						+pos(abs, null 1rem -1rem null)
-				.author
-					span
-						display: block
-						color: darken(color-get($mau,trang),35%)
-						+fz(.9rem)
-						margin-top: .5rem
-	.owl-carousel
-		position: relative
-		// Main
-		.owl-stage-outer
-			.owl-stage
-				display: flex
-			.owl-item
-				display: flex
-		// Nav
-		.owl-nav
-			text-align: center
-			button
-				&.owl-prev, &.owl-next
+					.box-img
+						img 
+							max-width: 100%
+							height: 324px
+					figcaption
+						.text
+							.buttom 
+								a 
+									i
+										&:hover, &.active
+											color: #ffffff
+											box-shadow: 0px 0px 30px 0px #e4bf60
+					figcaption
+						+pos(abs, null null 8% 8%)
+						.text
+							display: flex
+							justify-content: space-between
+							h3 
+								max-width: 70%
+								line-height: 1rem
+								overflow: hidden
+								max-height: 3rem
+							.buttom
+								display: flex
+								justify-content: flex-end
+								margin-right: 2rem
+				+media-breakpoint-up(xl)
+					.box-img
+						img 
+							max-width: 100%
+							height: 390px
+		.testimonial-slider
+			.item
+				text-align: center
+				width: 100%
+				img
+					max-width: 20%
+					display: inline-block
+				figcaption
+					margin: 0 auto
+					+media-breakpoint-up(lg)
+						max-width: 600px
+					h3 
+						color: #ffffff
+						+fz(1.7rem)
+						+fw(600)
+						span 
+							color: #e4bf60
+					blockquote
+						color: #686765
+						font-style: italic
+						margin-top: 1rem
+						position: relative
+						line-height: 1.5rem
+						display: inline-flex
+						+pad(0 3rem)
+						&:after, &:before
+							content: ''
+							display: inline-block
+							font-family: 'Font Awesome 5 Free'
+							font-weight: 900
+							+fz(3rem)
+							height: 2rem
+							width: 2rem
+							color: darken(color-get($mau,trang),35%)
+						&:before
+							content: "\201C"
+							+pos(abs, 0 null null 1rem)
+						&:after
+							content: "\201D"
+							+pos(abs, null 1rem -1rem null)
+					.author
+						color: #e4bf60
+						margin-bottom: 2rem
+						span
+							display: block
+							color: darken(color-get($mau,trang),35%)
+							+fz(.9rem)
+							margin-top: .5rem
+			+media-breakpoint-up(lg)
+				.item
+					margin-top: 3.29rem
+		.owl-carousel
+			position: relative
+			// Main
+			.owl-stage-outer
+				.owl-stage
+					display: flex
+				.owl-item
+					display: flex
+			// Nav
+			.owl-nav
+				button
+					+pos(abs, 50% null null null)
+					width: 100%
+					display: flex
+					justify-content: center
+					align-content: center
 					+mar(.5rem)
 					+pad(.5rem_)
 					width: 3rem
 					height: 3rem
-					background: darken(color-get($mau,trang),5%)
+					background: #353430
 					+bor-rad(50%)
 					text-align: center
 					&:focus
 						outline: none
-				&:hover, &.active
-					&.owl-prev, &.owl-next
-						background: color-get($mau,main)
-						color: color-get($mau,trang)
-				&.disabled
-					+opacity(.5)
-		// Dots
-		.owl-dots
-			+pos(abs, null null 0 0)
-			width: 100%
-			text-align: center
-			.owl-dot
-				+mar(.5rem)
-				&:focus
-					outline: none
-				span
-					background: darken(color-get($mau,trang),5%)
-					width: .7rem
-					height: .7rem
-					display: block
-					+bor-rad(50%)
-				&.active
+					&:hover, &.active
+						&.owl-prev, &.owl-next
+							background: #e4bf60
+							color: #ffffff
+							box-shadow: 0px 0px 30px 0px #e4bf60
+					&.disabled
+						+opacity(.5)
+					&.owl-prev
+						left: 0
+					&.owl-next
+						right: 0
+			// Dots
+			.owl-dots
+				+pos(abs, null null 0 0)
+				width: 100%
+				text-align: center
+				.owl-dot
+					+mar(.5rem)
+					&:focus
+						outline: none
 					span
-						background: color-get($mau,main)
+						background: #b9b5aa
+						width: .7rem
+						height: .7rem
+						display: block
+						+bor-rad(50%)
+					&.active
+						span
+							background: #fff
+							transform: scale(1.3)
+	+media-breakpoint-up(lg)
+		display: flex
+		justify-content: center
+		.up
+			position: absolute
+			width: 100%
+			height: 100%
+			top: -5rem
+			.down
+				margin-top: 3rem
